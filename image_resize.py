@@ -1,0 +1,10 @@
+import cv2
+img=cv2.imread("boy1.png",0)
+cv2.imshow("boy1.png",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+print(img.shape)
+print(type(img))
+resized_image=cv2.resize(img,(260,220))
+cv2.imshow("boy1",resized_image)
+#face_cascade=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
